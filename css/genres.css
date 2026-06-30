@@ -1,0 +1,173 @@
+.genres-hero {
+    text-align: center;
+    padding: 100px 20px 90px;
+    border: 1px solid #5a5a5a;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.133);
+    width: 1100px;
+    justify-self: center;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.391);
+}
+.genres-hero h1 {
+    font-size: 2rem;
+    font-weight: 800;
+    margin: 0 0 14px;
+    letter-spacing: -0.02em;
+}
+.genres-hero p {
+    max-width: 560px;
+    margin: 0 auto;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: #5a5a5a;
+}
+.genre-filter {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 32px 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+.filter-btn {
+    padding: 8px 18px;
+    border-radius: 999px;
+    border: 1px solid var(--color-tertiary);
+    background: #fff;
+    color: var(--color-text);
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+.filter-btn:hover, .filter-btn.active {
+    background: var(--color-primary);
+    border-color: var(--color-primary);
+    color: #fff;
+}
+.genre-section {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 48px 20px 100px;
+}
+.genre-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    align-items: start;
+}
+.genre-card {
+    position: relative;
+    width: 100%;
+    border: none;
+    border-radius: 18px;
+    overflow: hidden;
+    padding: 24px 22px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    cursor: pointer;
+    font-family: inherit;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.genre-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 26px rgba(99, 103, 255, 0.22);
+}
+.genre-card.open {
+    box-shadow: 0 10px 26px rgba(99, 103, 255, 0.28);
+}
+ .genre-card .tag {
+    align-self: flex-start;
+    font-size: 0.72rem;
+    background: rgba(255,255,255,0.25);
+    padding: 4px 10px;
+    border-radius: 999px;
+    margin-bottom: 14px;
+}
+.genre-card h3 {
+    font-size: 1.15rem;
+    margin: 0 0 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+}
+ .toggle-icon {
+    display: inline-block;
+    font-size: 0.9rem;
+    transition: transform 0.25s ease;
+}
+.genre-card.open .toggle-icon {
+    transform: rotate(180deg);
+}
+.genre-card .genre-desc {
+    font-size: 0.82rem;
+    line-height: 1.5;
+    margin: 0;
+    opacity: 0.9;
+}
+.track-wrap {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, opacity 0.25s ease, margin-top 0.3s ease;
+}
+.genre-card.open .track-wrap {
+    max-height: 260px;
+    opacity: 1;
+    margin-top: 16px;
+  }
+ 
+.track-list {
+    list-style: none;
+    margin: 0;
+    padding: 14px 0 0;
+    border-top: 1px solid rgba(255,255,255,0.3);
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+} 
+.track-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 10px;
+    font-size: 0.82rem;
+ } 
+ .track-list .track-num {
+    opacity: 0.7;
+    font-size: 0.75rem;
+    width: 16px;
+    flex-shrink: 0;
+}
+.track-title {
+    font-weight: 600;
+    flex: 1;
+}
+.track-artist {
+    opacity: 0.85;
+    white-space: nowrap;
+    font-size: 0.78rem;
+}
+.g-ballad { background: linear-gradient(135deg, #6367FF, #8494FF); }
+  .g-hiphop { background: linear-gradient(135deg, #1f1f1f, #6367FF); }
+  .g-pop    { background: linear-gradient(135deg, #8494FF, #C9BEFF); }
+  .g-rnb    { background: linear-gradient(135deg, #FFDBFD, #8494FF); }
+  .g-indie  { background: linear-gradient(135deg, #6367FF, #FFDBFD); }
+  .g-jazz   { background: linear-gradient(135deg, #4a4a8a, #8494FF); }
+  .g-edm    { background: linear-gradient(135deg, #6367FF, #2e2eff); }
+  .g-classic{ background: linear-gradient(135deg, #C9BEFF, #6367FF); }
+  .g-ost    { background: linear-gradient(135deg, #FFDBFD, #8494FF); }
+ @media screen and (max-width: 900px) {
+    .genre-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+}
+ 
+ @media screen and (max-width: 540px) {
+    .genre-grid {
+      grid-template-columns: 1fr;
+    }
+}
