@@ -13,3 +13,7 @@
 #8494FF
 #C9BEFF
 #FFDBFD
+
+폰트:
+영문) Kanit
+한글) IBM Plex Sans KR
