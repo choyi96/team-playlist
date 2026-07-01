@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../js/review.js" defer></script>
+    <title>리뷰 페이지</title>
+</head>
+<body>
+
+    <header>
+        <h1 id="review-title">리뷰 게시판</h1>
+        <a id="back-to-artist" href="#">← 아티스트 상세로 돌아가기</a>
+    </header>
+
+    <main>
+        <section id="review-form-section">
+            <h3>리뷰 남기기</h3>
+            <form id="review-form">
+                <div>
+                    <label for="username">닉네임: </label>
+                    <input type="text" id="username" required>
+                </div>
+                <div>
+                    <label for="comment">내용: </label>
+                    <textarea id="comment" rows="4" required></textarea>
+                </div>
+                <button type="submit">등록하기</button>
+            </form>
+        </section>
+
+        <hr>
+
+        <section id="review-list-section">
+            <h3>등록된 리뷰</h3>
+            <div id="review-container">
+                <p id="no-review">첫 리뷰를 작성해보세요!</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

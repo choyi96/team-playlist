@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../js/ramdom.js" defer></script>
+    <title>음악 랜덤 추천</title>
+</head>
+<body>
+
+    <header>
+        <h1>오늘의 랜덤 음악 추천</h1>
+    </header>
+
+    <main>
+        <section id="recommendation-section">
+            <button id="recommend-btn">새로운 음악 추천받기</button>
+            
+            <div id="music-card" style="display: none;">
+                <h2 id="music-title">곡 제목</h2>
+                <p id="music-artist">아티스트명</p>
+                <p id="music-genre">장르: <span id="genre-text"></span></p>
+                <a id="artist-link" href="#">아티스트 상세 보기</a>
+            </div>
+        </section>
+    </main>
+
+    <script src="recommend.js"></script>
+</body>
+</html>
