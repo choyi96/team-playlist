@@ -12,7 +12,7 @@ reviewForm.addEventListener('submit', (e) => {
     e.preventDefault(); 
     const username = document.getElementById('username').value;
     const comment = document.getElementById('comment').value;
-ㄴ
+
     const newReview = {
         username: username,
         comment: comment,

@@ -1,0 +1,112 @@
+body {
+    background-color: #0f172a; 
+    color: #f8fafc;
+    font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+#recommendation-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+}
+
+#recommend-btn {
+    background: linear-gradient(135deg, #6366f1, #a855f7); 
+    color: #ffffff;
+    border: none;
+    border-radius: 50px;
+    padding: 14px 28px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(99, 102, 241, 0.4);
+    transition: all 0.3s ease;
+}
+
+#recommend-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(168, 85, 247, 0.6);
+}
+
+#recommend-btn:active {
+    transform: translateY(1px);
+}
+
+#music-card {
+    background: rgba(30, 41, 59, 0.7); 
+    backdrop-filter: blur(10px); 
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 30px;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 0.5s ease-out; 
+}
+
+#music-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0 0 8px 0;
+    color: #ffffff;
+    word-break: keep-all;
+}
+
+
+#music-artist {
+    font-size: 16px;
+    color: #94a3b8;
+    margin: 0 0 16px 0;
+}
+
+
+#music-genre {
+    font-size: 14px;
+    color: #ffffff;
+    margin: 0 0 24px 0;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 6px 12px;
+    border-radius: 30px;
+    display: inline-block;
+}
+
+#genre-text {
+    color: #38bdf8; 
+    font-weight: 600;
+}
+
+#artist-link {
+    display: inline-block;
+    color: #a855f7;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    border-bottom: 1px solid transparent;
+    transition: all 0.2s ease;
+}
+
+#artist-link:hover {
+    color: #c084fc;
+    border-bottom: 1px solid #c084fc;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
