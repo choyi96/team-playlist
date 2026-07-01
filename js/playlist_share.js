@@ -18,7 +18,6 @@ const playlist = [
     { tracks: [{title:"태연",artist:"Rain"},{title:"레드벨벳",artist:"러시안 룰렛"},{title:"트와이스",artist:"Cheer Up"},{title:"볼빨간사춘기",artist:"우주를 줄게"},{title:"강승윤",artist:"본능적으로"},{title:"위너",artist:"REALLY REALLY"},{title:"레드벨벳",artist:"IN AND OUT"},{title:"현아",artist:"BUBBLE POP!"},{title:"미스에이",artist:"남자 없이 잘 살아"}] }
 ];
 
-
 function showPlayList(index){
     const pl = playlist[index];
 
@@ -37,8 +36,12 @@ function showPlayList(index){
     sharePlaylist.innerHTML = rows;
 }
 
-maker.forEach((card, index) =>{
-    card.addEventListener('click', () => {
+const makerCard = document.querySelectorAll('.makerCard');
+
+makerCard.forEach((card, index) =>{
+    card.addEventListener('click', ()=>{
+        makerCard.forEach(c => c.classList.remove('active'));
+        card.classList.add('active');
         showPlayList(index);
     });
 });

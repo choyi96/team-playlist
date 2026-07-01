@@ -94,3 +94,6 @@ h1.pls, h5.pls{
 .th-title{
     min-width:100px;
 }
+.makerCard.active{
+    outline: 3px dashed #6367FF;
+}
