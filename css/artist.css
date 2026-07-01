@@ -6,7 +6,6 @@
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
     padding: 40px;
 }
-
 .artist-buttons button {
   padding: 10px 24px;
   font-size: 14px;
@@ -16,30 +15,25 @@
   transition: all 0.2s ease-in-out; 
   outline: none;
 }
-
 .artist-profile {
     margin-bottom: 30px;
     text-align: center; 
 }
-
 .artist-name {
     font-size: 2rem;
     font-weight: 700;
     color: #111111;
     margin-bottom: 8px;
 }
-
 .artist-debut {
     font-size: 0.95rem;
     color: #666666;
     margin-bottom: 15px;
 }
-
 .debut-text {
     font-weight: 600;
     color: #4f46e5; 
 }
-
 .artist-bio {
     font-size: 1.05rem;
     color: #4a5568;
@@ -48,12 +42,9 @@
     border-radius: 12px;
     word-break: keep-all; 
 }
-
-
 .artist-tracks {
     margin-top: 25px;
 }
-
 .artist-tracks h3 {
     font-size: 1.3rem;
     color: #111111;
@@ -61,12 +52,9 @@
     border-left: 4px solid #4f46e5; 
     padding-left: 10px;
 }
-
 .track-list {
     list-style: none; 
 }
-
-
 .track-list li {
     font-size: 1rem;
     padding: 12px 16px;
@@ -78,8 +66,6 @@
     display: flex;
     align-items: center;
 }
-
-
 .track-list li:hover {
     background-color: #f3f4f6;
     transform: translateY(-2px);
