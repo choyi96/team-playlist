@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoodBeat [무드비트] - 회원가입</title>
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/signup.css"> 
+    <script src="/js/signup.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="/image/logo.png" alt="MoodBeat 로고" id="brandLogo">
+        <nav>
+            <ul>
+                <li><a href="/html/main.html">메인</a></li>
+                <li><a href="/html/genres.html">장르별 음악 추천</a></li>
+                <li><a href="#">오늘의 음악</a></li>
+                <li><a href="#">가사집</a></li>
+                <li><a href="#">아티스트</a></li>
+                <li><a href="#">My playlist</a></li>
+                <li><a href="#">Our playlist</a></li>
+                <li><a href="#">감상 후기</a></li>
+                <li><a href="/html/signup.html">회원가입</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-signup">
+        <form id="signupForm" class="signup-box">
+            <div id="formScreen">
+                <h1>회원가입</h1>
+                <p class="subtitle">MoodBeat와 함께 나만의 음악 공간을 만들어보세요.</p>
+ 
+                <div class="form-group">
+                    <label for="name">이름</label>
+                    <input type="text" id="name" placeholder="한글 2~5글자로 입력하세요">
+                    <p id="nameResult" class="message-text"></p>
+                </div>
+ 
+                <div class="form-group">
+                    <label for="email">이메일</label>
+                    <input type="email" id="email" placeholder="예: moodbeat@example.com">
+                    <p id="emailResult" class="message-text"></p>
+                </div>
+ 
+                <div class="form-group">
+                    <label for="nickname">닉네임</label>
+                    <input type="text" id="nickname" placeholder="최대 16자, 사이트에서 표시되는 이름이에요">
+                    <p id="nicknameResult" class="message-text"></p>
+                </div>
+ 
+                <div class="form-group">
+                    <label for="password">비밀번호</label>
+                    <input type="password" id="password" placeholder="영문·숫자·특수문자 포함 8글자 이상">
+                    <p id="passwordResult" class="message-text"></p>
+                </div>
+ 
+                <div class="form-group">
+                    <label for="passwordConfirm">비밀번호 확인</label>
+                    <input type="password" id="passwordConfirm" placeholder="비밀번호를 한번 더 입력해주세요">
+                    <p id="confirmError" class="message-text"></p>
+                </div>
+ 
+                <div class="form-group">
+                    <label for="gender">성별 <span style="font-weight:400; color:#a0a0a0;">(선택)</span></label>
+                    <select id="gender">
+                        <option value="">선택 안 함</option>
+                        <option value="male">남성</option>
+                        <option value="female">여성</option>
+                        <option value="other">기타</option>
+                    </select>
+                </div>
+ 
+                <div class="terms-group">
+                    <div class="terms-row">
+                        <input type="checkbox" id="agreeAll">
+                        <label for="agreeAll" style="font-weight:700;">전체 동의</label>
+                    </div>
+                    <div class="terms-divider"></div>
+                    <div class="terms-row">
+                        <input type="checkbox" id="agreeTerms">
+                        <label for="agreeTerms">[필수] 이용약관 동의</label>
+                        <a href="#">보기</a>
+                    </div>
+                    <div class="terms-row">
+                        <input type="checkbox" id="agreePrivacy">
+                        <label for="agreePrivacy">[필수] 개인정보 처리방침 동의</label>
+                        <a href="#">보기</a>
+                    </div>
+                    <div class="terms-row">
+                        <input type="checkbox" id="agreeMarketing">
+                        <label for="agreeMarketing">[선택] 마케팅 정보 수신 동의</label>
+                    </div>
+                    <span class="error-msg show" id="termsError" style="display:none;">필수 약관에 동의해주세요.</span>
+                </div>
+            </div>
+ 
+            <button type="submit" class="signup-button">가입하기</button>
+            <p id="signupResult" class="signup-result"></p>
+            <p class="login-link">이미 계정이 있으신가요? <a href="#">로그인</a></p>
+        </form>
+    
+        <div class="success-screen" id="successScreen">
+            <div class="success-icon">🎉</div>
+            <h2>가입이 완료됐어요!</h2>
+            <p>안녕하세요, <strong id="welcomeName"></strong>님!<br>MoodBeat에서 나만의 음악을 찾아보세요.</p>
+            <a href="/html/main.html" class="btn-home">메인으로 가기</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p class="footer-left">
+            ©무드비트 2026. All Rights Reserved. <br>
+            contact: moodbeat@mail.com
+        </p>
+        <div class="footer-right">
+            <ul>
+                <li>이용약관</li>
+                <li>개인정보처리방침</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
