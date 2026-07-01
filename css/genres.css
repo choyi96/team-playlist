@@ -3,7 +3,7 @@
     padding: 100px 20px 90px;
     border: 1px solid #5a5a5a;
     border-radius: 30px;
-    background-color: rgba(255, 255, 255, 0.133);
+    background-color: white;
     width: 1100px;
     justify-self: center;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.391);
@@ -152,14 +152,14 @@
     font-size: 0.78rem;
 }
 .g-ballad { background: linear-gradient(135deg, #6367FF, #8494FF); }
-  .g-hiphop { background: linear-gradient(135deg, #1f1f1f, #6367FF); }
-  .g-pop    { background: linear-gradient(135deg, #8494FF, #C9BEFF); }
-  .g-rnb    { background: linear-gradient(135deg, #FFDBFD, #8494FF); }
-  .g-indie  { background: linear-gradient(135deg, #6367FF, #FFDBFD); }
-  .g-jazz   { background: linear-gradient(135deg, #4a4a8a, #8494FF); }
-  .g-edm    { background: linear-gradient(135deg, #6367FF, #2e2eff); }
-  .g-classic{ background: linear-gradient(135deg, #C9BEFF, #6367FF); }
-  .g-ost    { background: linear-gradient(135deg, #FFDBFD, #8494FF); }
+.g-hiphop { background: linear-gradient(135deg, #1f1f1f, #6367FF); }
+.g-pop    { background: linear-gradient(135deg, #8494FF, #C9BEFF); }
+.g-rnb    { background: linear-gradient(135deg, #FFDBFD, #8494FF); }
+.g-indie  { background: linear-gradient(135deg, #6367FF, #FFDBFD); }
+.g-jazz   { background: linear-gradient(135deg, #4a4a8a, #8494FF); }
+.g-edm    { background: linear-gradient(135deg, #6367FF, #2e2eff); }
+.g-classic{ background: linear-gradient(135deg, #C9BEFF, #6367FF); }
+.g-ost    { background: linear-gradient(135deg, #FFDBFD, #8494FF); }
  @media screen and (max-width: 900px) {
     .genre-grid {
       grid-template-columns: repeat(2, 1fr);
