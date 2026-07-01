@@ -1,5 +1,5 @@
 const artistData = {
-    "newjeans": { name: "NewJeans", debut: "2022년", bio: "ADOR 소속의 5인조 걸그룹.", tracks: ["Hype Boy", "Attention", "Ditto"] },
+    "newjeans": { name: "NewJeans", debut: "2022년", bio: "ADOR 소속의 5인조 걸그룹.", tracks: ["Hype Boy", "Attention", "Ditto"]},
     "the-weeknd": { name: "The Weeknd", debut: "2010년", bio: "캐나다 출신의 세계적인 PBR&B 싱어송라이터.", tracks: ["Blinding Lights", "Starboy", "Save Your Tears"] },
     "bts": { name: "BTS", debut: "2013년", bio: "빅히트 뮤직 소속의 7인조 보이그룹.", tracks: ["Dynamite", "Butter", "Spring Day"] },
     "ed-sheeran": { name: "Ed Sheeran", debut: "2011년", bio: "영국 출신의 천재 싱어송라이터.", tracks: ["Shape of You", "Thinking Out Loud", "Perfect"] },

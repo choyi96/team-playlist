@@ -1,12 +1,3 @@
-/* style.css */
-
-/* 1. 기본 스타일 리셋 및 폰트 설정 */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     background-color: #f8f9fa;
@@ -15,7 +6,7 @@ body {
     padding: 40px 20px;
 }
 
-/* 2. 메인 컨테이너 스타일 */
+
 main {
     max-width: 600px;
     margin: 0 auto;
@@ -25,10 +16,9 @@ main {
     padding: 30px;
 }
 
-/* 3. 아티스트 프로필 섹션 */
 #artist-profile {
     margin-bottom: 30px;
-    text-align: center; /* 프로필 요소 중앙 정렬 */
+    text-align: center; 
 }
 
 #artist-name {
@@ -46,7 +36,7 @@ main {
 
 #debut-text {
     font-weight: 600;
-    color: #4f46e5; /* 데뷔 날짜에 포인트 컬러(보라색) 적용 */
+    color: #4f46e5; 
 }
 
 #artist-bio {
@@ -55,10 +45,10 @@ main {
     background-color: #f1f5f9;
     padding: 15px;
     border-radius: 12px;
-    word-break: keep-all; /* 한글 단어 단위 줄바꿈 */
+    word-break: keep-all; 
 }
 
-/* 4. 대표곡 목록 섹션 */
+
 #artist-tracks {
     margin-top: 25px;
 }
@@ -67,7 +57,7 @@ main {
     font-size: 1.3rem;
     color: #111111;
     margin-bottom: 15px;
-    border-left: 4px solid #4f46e5; /* 제목 왼쪽에 포인트 바 추가 */
+    border-left: 4px solid #4f46e5; 
     padding-left: 10px;
 }
 
@@ -75,7 +65,7 @@ main {
     list-style: none; /* 기본 점 제거 */
 }
 
-/* 나중에 자바스크립트 등으로 <li> 태그가 추가되었을 때 적용될 스타일 */
+
 #track-list li {
     font-size: 1rem;
     padding: 12px 16px;
@@ -88,14 +78,14 @@ main {
     align-items: center;
 }
 
-/* 곡 목록에 마우스를 올렸을 때 효과 */
+
 #track-list li:hover {
     background-color: #f3f4f6;
     transform: translateY(-2px);
     border-color: #cfd1d4;
 }
 
-/* 5. 구분선 스타일 */
+
 hr {
     border: 0;
     height: 1px;
