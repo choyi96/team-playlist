@@ -61,10 +61,11 @@ h1, h5{
 }
 .container{
     display: flex;
+    justify-content: center;
+    gap: 50px;
 }
 .playlist{
     background-color: #e9e9e9;
-    margin: 0 auto;
     margin-top: 20px;
     padding: 10px;
     width: 500px;
@@ -72,7 +73,7 @@ h1, h5{
 .playlistTable{
     border-collapse: collapse;
     margin: 0 auto;
-    width: 500px;
+    width: 450px;
     text-align: center;
 }
 .playlistInfo{
