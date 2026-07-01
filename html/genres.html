@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoodBeat [무드비트] - 장르별 음악 추천</title>
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/genres.css"> 
+    <script src="/js/genres.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="/image/logo.png" alt="MoodBeat 로고" id="brandLogo">
+        <nav>
+            <ul>
+                <li><a href="/html/main.html">메인</a></li>
+                <li><a href="/html/genres.html">장르별 음악 추천</a></li>
+                <li><a href="#">오늘의 음악</a></li>
+                <li><a href="/html/lyrics.html">가사집</a></li>
+                <li><a href="#">아티스트</a></li>
+                <li><a href="/html/playlist.html">My playlist</a></li>
+                <li><a href="/html/playlist_share.html">Our playlist</a></li>
+                <li><a href="#">감상 후기</a></li>
+                <li><a href="/html/signup.html">회원가입</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-genres">
+        <section class="genres-hero">
+            <h1>장르별로 만나는 음악</h1>
+            <p>발라드부터 EDM까지, 원하는 장르 카드를 눌러 그 안에 담긴 곡들을 바로 확인해보세요.</p>
+        </section>
+
+        <section class="genre-section">
+            <div class="genre-grid" id="genreGrid">
+                <button type="button" class="genre-card g-ballad" data-genre="발라드">
+                <h3>발라드 <span class="toggle-icon">▾</span></h3>
+                <p class="genre-desc">마음을 차분히 가라앉히는 잔잔한 선율</p>
+                <div class="track-wrap">
+                    <ul class="track-list">
+                        <li><span class="track-num">1</span><span class="track-title">밤편지</span><span class="track-artist">아이유</span></li>
+                        <li><span class="track-num">2</span><span class="track-title">좋은 날</span><span class="track-artist">아이유</span></li>
+                        <li><span class="track-num">3</span><span class="track-title">너의 모든 순간</span><span class="track-artist">성시경</span></li>
+                        <li><span class="track-num">4</span><span class="track-title">애상</span><span class="track-artist">SG워너비</span></li>
+                    </ul>
+                </div>
+                </button>
+ 
+                <button type="button" class="genre-card g-hiphop" data-genre="힙합">
+                <h3>힙합 <span class="toggle-icon">▾</span></h3>
+                <p class="genre-desc">리듬감 있는 비트와 솔직한 가사</p>
+                <div class="track-wrap">
+                    <ul class="track-list">
+                        <li><span class="track-num">1</span><span class="track-title">Dynamite</span><span class="track-artist">방탄소년단</span></li>
+                        <li><span class="track-num">2</span><span class="track-title">에라 모르겠다</span><span class="track-artist">비비</span></li>
+                        <li><span class="track-num">3</span><span class="track-title">When I Get Old</span><span class="track-artist">자이언티</span></li>
+                        <li><span class="track-num">4</span><span class="track-title">호랑이소년</span><span class="track-artist">이센스</span></li>
+                    </ul>
+                </div>
+                </button>
+ 
+                <button type="button" class="genre-card g-pop" data-genre="팝">
+                <h3>팝 <span class="toggle-icon">▾</span></h3>
+                <p class="genre-desc">경쾌하고 중독성 있는 멜로디</p>
+                <div class="track-wrap">
+                    <ul class="track-list">
+                        <li><span class="track-num">1</span><span class="track-title">Shape of You</span><span class="track-artist">Ed Sheeran</span></li>
+                        <li><span class="track-num">2</span><span class="track-title">Blinding Lights</span><span class="track-artist">The Weeknd</span></li>
+                        <li><span class="track-num">3</span><span class="track-title">Cruel Summer</span><span class="track-artist">Taylor Swift</span></li>
+                        <li><span class="track-num">4</span><span class="track-title">Levitating</span><span class="track-artist">Dua Lipa</span></li>
+                    </ul>
+                </div>
+                </button>
+ 
+                <button type="button" class="genre-card g-rnb" data-genre="R&B">
+                <h3>R&amp;B <span class="toggle-icon">▾</span></h3>
+                <p class="genre-desc">부드러운 그루브와 감성적인 보컬</p>
+                <div class="track-wrap">
+                    <ul class="track-list">
+                        <li><span class="track-num">1</span><span class="track-title">서울의 잠 못 이루는 밤</span><span class="track-artist">윤하</span></li>
+                        <li><span class="track-num">2</span><span class="track-title">고민중독</span><span class="track-artist">기리보이</span></li>
+                        <li><span class="track-num">3</span><span class="track-title">Adore U</span><span class="track-artist">박재범</span></li>
+                        <li><span class="track-num">4</span><span class="track-title">밤 11시 50분</span><span class="track-artist">크러쉬</span></li>
+                    </ul>
+                </div>
+                </button>
+ 
+                <button type="button" class="genre-card g-indie" data-genre="인디">
+                <h3>인디 <span class="toggle-icon">▾</span></h3>
+                <p class="genre-desc">개성 있는 음색과 솔직한 이야기</p>
+                <div class="track-wrap">
+                    <ul class="track-list">
+                        <li><span class="track-num">1</span><span class="track-title">너의 의미</span><span class="track-artist">잔나비</span></li>
+                        <li><span class="track-num">2</span><span class="track-title">매미</span><span class="track-artist">아이유</span></li>
+                        <li><span class="track-num">3</span><span class="track-title">우산</span><span class="track-artist">소란</span></li>
+                        <li><span class="track-num">4</span><span class="track-title">취중진담</span><span class="track-artist">검정치마</span></li>
+                    </ul>
+                </div>
+                </button>
+ 
+                <button type="button" class="genre-card g-jazz" data-genre="재즈">
+                <h3>재즈 <span class="toggle-icon">▾</span></h3>
+                <p class="genre-desc">여유롭고 세련된 즉흥의 매력</p>
+                <div class="track-wrap">
+                    <ul class="track-list">
+                        <li><span class="track-num">1</span><span class="track-title">Fly Me to the Moon</span><span class="track-artist">Frank Sinatra</span></li>
+                        <li><span class="track-num">2</span><span class="track-title">Feeling Good</span><span class="track-artist">Nina Simone</span></li>
+                        <li><span class="track-num">3</span><span class="track-title">Take Five</span><span class="track-artist">Dave Brubeck</span></li>
+                        <li><span class="track-num">4</span><span class="track-title">What a Wonderful World</span><span class="track-artist">Louis Armstrong</span></li>
+                    </ul>
+                </div>
+                </button>
+ 
+                <button type="button" class="genre-card g-edm" data-genre="EDM">
+                <h3>EDM <span class="toggle-icon">▾</span></h3>
+                <p class="genre-desc">강렬한 비트로 분위기를 끌어올리는 음악</p>
+                <div class="track-wrap">
+                    <ul class="track-list">
+                        <li><span class="track-num">1</span><span class="track-title">Faded</span><span class="track-artist">Alan Walker</span></li>
+                        <li><span class="track-num">2</span><span class="track-title">Wake Me Up</span><span class="track-artist">Avicii</span></li>
+                        <li><span class="track-num">3</span><span class="track-title">Don't You Worry Child</span><span class="track-artist">Swedish House Mafia</span></li>
+                        <li><span class="track-num">4</span><span class="track-title">Titanium</span><span class="track-artist">David Guetta</span></li>
+                    </ul>
+                </div>
+                </button>
+ 
+                <button type="button" class="genre-card g-classic" data-genre="클래식">
+                <h3>클래식 <span class="toggle-icon">▾</span></h3>
+                <p class="genre-desc">시대를 초월한 우아하고 깊은 선율</p>
+                <div class="track-wrap">
+                    <ul class="track-list">
+                        <li><span class="track-num">1</span><span class="track-title">River Flows in You</span><span class="track-artist">이루마</span></li>
+                        <li><span class="track-num">2</span><span class="track-title">Clair de Lune</span><span class="track-artist">Claude Debussy</span></li>
+                        <li><span class="track-num">3</span><span class="track-title">Canon in D</span><span class="track-artist">Johann Pachelbel</span></li>
+                        <li><span class="track-num">4</span><span class="track-title">Nocturne Op.9 No.2</span><span class="track-artist">Frédéric Chopin</span></li>
+                    </ul>
+                </div>
+                </button>
+ 
+                <button type="button" class="genre-card g-ost" data-genre="OST">
+                <h3>OST <span class="toggle-icon">▾</span></h3>
+                <p class="genre-desc">영화와 드라마 속 명장면을 떠올리게 하는 곡들</p>
+                <div class="track-wrap">
+                    <ul class="track-list">
+                        <li><span class="track-num">1</span><span class="track-title">Always</span><span class="track-artist">박효신</span></li>
+                        <li><span class="track-num">2</span><span class="track-title">눈의 꽃</span><span class="track-artist">박효신</span></li>
+                        <li><span class="track-num">3</span><span class="track-title">My Heart Will Go On</span><span class="track-artist">Celine Dion</span></li>
+                        <li><span class="track-num">4</span><span class="track-title">A Thousand Years</span><span class="track-artist">Christina Perri</span></li>
+                    </ul>
+                </div>
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p class="footer-left">
+            ©무드비트 2026. All Rights Reserved. <br>
+            contact: moodbeat@mail.com
+        </p>
+        <div class="footer-right">
+            <ul>
+                <li>이용약관</li>
+                <li>개인정보처리방침</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,44 @@
+@import 
+url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+h1.pl, h5.pl, h3.pl{
+    text-align: center;
+}
+h5.pl{
+    color:#221b88;
+}
+table{
+    border-collapse: collapse;
+    width:70%;
+    margin: 0 auto;
+    text-align: center;
+}
+th{
+    min-width: 200px;
+    height: 50px;
+    background-color: #8494FF;
+    border-bottom: 3px dashed #6367FF;
+}
+.input-container{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    height: 40px;
+}
+.input-container input{
+    background-color: #f2f4ff;
+}
+.playlist-body tr{
+    background-color: #c3caf575;
+    height: 40px;
+}
+.playlist-body tr:nth-child(even){
+    background-color: #43497286;
+    color:aliceblue
+}
+
+#completeButton{
+    display: block;
+    margin-left: auto;
+    margin-right: 15%;
+}
