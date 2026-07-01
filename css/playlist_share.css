@@ -67,6 +67,7 @@ h1.pls, h5.pls{
     margin-top: 20px;
     padding: 10px;
     width: 500px;
+    height: 500px;
 }
 .playlistTable{
     border-collapse: collapse;
@@ -83,4 +84,10 @@ h1.pls, h5.pls{
     padding: 10px 10px;
     color: #41448a;
     font-weight: bold;
+}
+.makerCard:hover{
+    background-color: #6367FF;
+}
+.th-artist{
+    min-width: 100px;
 }

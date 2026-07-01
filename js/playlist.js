@@ -35,6 +35,6 @@ completeButton.addEventListener("click", () => {
     return;
   }
 
-  inputContainer.outerHTML=`<h3>나만의 플레이리스트가 완성되었습니다!👏🎵</h3>`;
+  inputContainer.outerHTML=`<h3 class="pl">나만의 플레이리스트가 완성되었습니다!👏🎵</h3>`;
   completeButton.remove();
 });
