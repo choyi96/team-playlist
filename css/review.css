@@ -31,19 +31,6 @@ header {
     text-decoration: underline;
 }
 
-hr {
-    border: 0;
-    height: 1px;
-    background-color: #FFDBFD;
-    margin: 30px 0;
-}
-
-h3 {
-    font-size: 1.3rem;
-    color: #222222;
-    margin-bottom: 20px;
-}
-
 #review-form div {
     margin-bottom: 16px;
     display: flex;

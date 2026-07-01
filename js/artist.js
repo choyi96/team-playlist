@@ -1,34 +1,54 @@
 const artistData = {
-    "newjeans": { name: "NewJeans", debut: "2022년", bio: "ADOR 소속의 5인조 걸그룹.", tracks: ["Hype Boy", "Attention", "Ditto"]},
-    "the-weeknd": { name: "The Weeknd", debut: "2010년", bio: "캐나다 출신의 세계적인 PBR&B 싱어송라이터.", tracks: ["Blinding Lights", "Starboy", "Save Your Tears"] },
-    "bts": { name: "BTS", debut: "2013년", bio: "빅히트 뮤직 소속의 7인조 보이그룹.", tracks: ["Dynamite", "Butter", "Spring Day"] },
-    "ed-sheeran": { name: "Ed Sheeran", debut: "2011년", bio: "영국 출신의 천재 싱어송라이터.", tracks: ["Shape of You", "Thinking Out Loud", "Perfect"] },
-    "bibi": { name: "비비 (BIBI)", debut: "2019년", bio: "필굿뮤직 소속의 독보적인 색깔을 가진 솔로 가수.", tracks: ["밤양갱", "나쁜X", "인생은 나쁜X"] }
+    bts: {
+        name: "방탄소년단 (BTS)",
+        debut: "2013년 6월 13일",
+        bio: "대한민국의 7인조 보이그룹으로, 전 세계적으로 엄청난 영향력을 가진 글로벌 팝 아이콘입니다.",
+        tracks: ["Dynamite", "Butter", "봄날", "Life Goes On"]
+    },
+    iu: {
+        name: "아이유 (IU)",
+        debut: "2008년 9월 18일",
+        bio: "대한민국의 싱어송라이터이자 배우로, 독보적인 음원 파워와 깊은 감성을 가진 아티스트입니다.",
+        tracks: ["좋은 날", "밤편지", "에잇 (prod. & feat. SUGA)", "Love wins all"]
+    }
 };
 
-const keys = Object.keys(artistData);
+function displayArtistProfile(artistKey) {
+    const artist = artistData[artistKey];
+    
+    
+    if (!artist) {
+        console.error("해당 아티스트의 정보가 없습니다.");
+        return;
+    }
 
-const randomKey = keys[Math.floor(Math.random() * keys.length)];
+   
+    const nameElem = document.getElementById("artist-name");
+    const debutElem = document.getElementById("debut-text");
+    const bioElem = document.getElementById("artist-bio");
+    const trackListElem = document.getElementById("track-list");
 
-const urlParams = new URLSearchParams(window.location.search);
+   
+    nameElem.textContent = artist.name;
+    debutElem.textContent = artist.debut;
+    bioElem.textContent = artist.bio;
 
-const artistId = urlParams.get('id') || randomKey; 
-const artist = artistData[artistId];
+ 
+    trackListElem.innerHTML = ""; 
 
-if (artist) {
-    document.getElementById('artist-name').textContent = artist.name;
-    document.getElementById('debut-text').textContent = artist.debut;
-    document.getElementById('artist-bio').textContent = artist.bio;
-
-    const trackListEl = document.getElementById('track-list');
-    trackListEl.innerHTML = ''; 
+   
     artist.tracks.forEach(track => {
-        const li = document.createElement('li');
+        const li = document.createElement("li");
         li.textContent = track;
-        trackListEl.appendChild(li);
+        trackListElem.appendChild(li);
     });
-
-    document.getElementById('review-link').href = `review.html?id=${artistId}`;
-} else {
-    document.getElementById('artist-profile').innerHTML = '<h1>아티스트 정보를 찾을 수 없습니다.</h1>';
 }
+
+
+document.body.addEventListener("click", function(event) {
+    
+    if (event.target.classList.contains("btn-artist")) {
+        const selectedArtist = event.target.getAttribute("data-artist");
+        displayArtistProfile(selectedArtist);
+    }
+});
