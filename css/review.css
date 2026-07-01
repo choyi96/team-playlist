@@ -1,22 +1,8 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Noto Sans KR', sans-serif;
-}
-
-body {
-    background-color: #8494FF;
-    color: #333333;
-    line-height: 1.6;
-    padding: 40px 20px;
-}
-
 main {
     max-width: 600px;
     margin: 0 auto;
     background-color: #ffffff;
-    padding: 30px;
+    padding: 50px;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
