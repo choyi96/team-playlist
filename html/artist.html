@@ -10,9 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -32,29 +30,32 @@
         </nav>
     </header>
 
-    <main class="main-artist">
+    <main class="container">
+        <div class="main-artist">
 
-        <div class="artist-buttons">
-        <button class="btn-artist" data-artist="bts">방탄소년단 보기</button>
-        <button class="btn-artist" data-artist="iu">아이유 보기</button>
-        <button class="btn-artist" data-artist="blackpink">블랙핑크 보기</button>
-        <button class="btn-artist" data-artist="newjeans">뉴진스 보기</button>
-        <button class="btn-artist" data-artist="seventeen">세븐틴 보기</button>
+            <div class="artist-buttons">
+                <button class="btn-artist" data-artist="bts">방탄소년단 보기</button>
+                <button class="btn-artist" data-artist="iu">아이유 보기</button>
+                <button class="btn-artist" data-artist="blackpink">블랙핑크 보기</button>
+                <button class="btn-artist" data-artist="newjeans">뉴진스 보기</button>
+                <button class="btn-artist" data-artist="seventeen">세븐틴 보기</button>
+            </div>
+
+            <section id="artist-profile">
+                <h1 id="artist-name">아티스트 이름</h1>
+                <p id="artist-debut">데뷔: <span id="debut-text"></span></p>
+                <p id="artist-bio"></p>
+            </section>
+
+            <section id="artist-tracks">
+                <h3>대표곡 목록</h3>
+                <ul id="track-list"></ul>
+            </section>
+
         </div>
-
-        <section id="artist-profile">
-            <h1 id="artist-name">아티스트 이름</h1>
-            <p id="artist-debut">데뷔: <span id="debut-text"></span></p>
-            <p id="artist-bio"></p>
-        </section>
-
-        <section id="artist-tracks">
-            <h3>대표곡 목록</h3>
-            <ul id="track-list"></ul>
-        </section>
     </main>
     
-     <footer>
+    <footer>
         <p class="footer-left">
             ©무드비트 2026. All Rights Reserved. <br>
             contact: moodbeat@mail.com
