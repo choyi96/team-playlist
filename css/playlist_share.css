@@ -4,11 +4,9 @@ url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&family=Kanit:ital
 ul{
     list-style: none;
 }
-body{
-    background-color: #F5F5F5;
-}
-h1, h5{
+h1.pls, h5.pls{
     text-align: center;
+    
 }
 
 .makerInfo{

@@ -2,10 +2,8 @@
 url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 
-body{
+.ly{
     text-align: center;
-    font-family: 'IBM Plex Sans KR', sans-serif;
-    background: linear-gradient(180deg,#8494FF 28%, #FFDBFD 100%);
 }
 table {
     table-layout: fixed;
@@ -24,4 +22,7 @@ th {
 iframe{
     border: none;
     margin: 0 auto;
+}
+h2.ly, h5.ly p.ly{
+    text-align: center;
 }
