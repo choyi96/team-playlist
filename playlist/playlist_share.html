@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공유 플레이 리스트</title>
+    <link rel="stylesheet" href="./playlist_share.css">
+    <script src="./playlist_share.js" defer></script>
+</head>
+<body>
+    <h1>다른 사람들의 플레이리스트 구경하기🎶</h1>
+    <em><h5>다른 사람들이 만든 플레이리스트를 구경하세요 👀 마음에 들면 좋아요를 눌러주세요!♥️ </h5></em>
+    <br>
+    <div class="container">
+        <section class="makerList">
+            <ul class="makerInfo">
+                <li class="maker">
+                    <div class="makerCard">
+                        <p class="emoji">😺</p>
+                        <div class="names">
+                            <p class="name">가나디</p>
+                            <p class="playlistName">청량 청량</p>
+                        </div>
+                        <div class="like">
+                            <p class="likeButton">20</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="maker">
+                    <div class="makerCard">
+                        <p class="emoji">🔥</p>
+                        <div class="names">
+                            <p class="name">재즈가좋아</p>
+                            <p class="playlistName">째즈 말고 힙합</p>
+                        </div>
+                        <div class="like">
+                            <p class="likeButton">3</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="maker">
+                    <div class="makerCard">
+                        <p class="emoji">🥺</p>
+                        <div class="names">
+                            <p class="name">노래듣는사람</p>
+                            <p class="playlistName">my playlist</p>
+                        </div>
+                        <div class="like">
+                            <p class="likeButton">932</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section class="playlist">
+            <table class="playlistTable">
+                <tr class="playlistInfo">
+                    <th>제목</th>
+                    <th>아티스트</th>
+                </tr>
+                <tbody id="sharePlaylist"></tbody>
+            </table>
+        </section>
+    </div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>플레이 리스트</title>
+    <link rel="stylesheet" href="./playlist.css">
+    <script src="./playlist.js" defer></script>
+</head>
+<body>
+    <br>
+    <h1>나만의 플레이리스트 만들기 🎵</h1>
+    <em><h5>원하는 노래를 입력해 나만의 플레이리스트를 만들어보세요! (제목과 아티스트는 필수로 입력해야 합니다.)</h5></em>
+    <br>
+
+    <p class="input-container">
+        <input type="text" id="title" placeholder="제목을 입력하세요">
+        <input type="text" id="artist" placeholder="아티스트를 입력하세요">
+        <input type="text" id="album" placeholder="앨범을 입력하세요">
+        <input type="date" id="release-date" placeholder="발매일을 입력하세요">
+        <button id="addButton">추가</button>
+    </p>
+
+    <div class="playlist-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>제목</th>
+                    <th>아티스트</th>
+                    <th>앨범</th>
+                    <th>발매일</th>
+                </tr>
+            </thead>
+            <tbody id="my-playlist" class="playlist-body"></tbody>
+        </table>
+    </div>
+    <br>
+    <button type="button" id="completeButton">완성!</button>
+</body>
+</html>
