@@ -13,6 +13,6 @@ songs.forEach((song, i) => {
         const lyricText = playlist[i].lyricText;
         
         musicPlay.src = youtube;
-        lyric.innerHTML = `<h4>${title}</h4><h5>${artist}</h5><p>${lyricText}</p>`;
+        lyric.innerHTML = `<h2>${title}</h2><h5>${artist}</h5><p>${lyricText}</p>`;
     });
 });

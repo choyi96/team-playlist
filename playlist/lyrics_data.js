@@ -53,7 +53,7 @@ CQCQ どこなのエイリアン<br>
 4season<br>
 I miss you<br>
 愛密集<br>`},
-    {title: "Good Luck, Babe!", artist: "Chappell Roan", youtube: "https://www.youtube.com/embed/VZ-oGLluGAc?si=0Ic3jQJhhHcGw7q8", lyricText: `It's fine, it's cool<br>
+    {title: "Good Luck, Babe!", artist: "Chappell Roan", youtube: "https://www.youtube.com/embed/VZ-oGLluGAc?si=QiYeVQDp09xwIKhl", lyricText: `It's fine, it's cool<br>
 You can say that we are nothing, but you know the truth<br>
 And guess I'm the fool<br>
 With her arms out like an angel through the car sunroof<br>
