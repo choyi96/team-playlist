@@ -6,8 +6,13 @@ const artistData = {
     "bibi": { name: "비비 (BIBI)", debut: "2019년", bio: "필굿뮤직 소속의 독보적인 색깔을 가진 솔로 가수.", tracks: ["밤양갱", "나쁜X", "인생은 나쁜X"] }
 };
 
+const keys = Object.keys(artistData);
+
+const randomKey = keys[Math.floor(Math.random() * keys.length)];
+
 const urlParams = new URLSearchParams(window.location.search);
-const artistId = urlParams.get('id') || 'newjeans'; 
+
+const artistId = urlParams.get('id') || randomKey; 
 const artist = artistData[artistId];
 
 if (artist) {

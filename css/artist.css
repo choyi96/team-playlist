@@ -1,0 +1,104 @@
+/* style.css */
+
+/* 1. 기본 스타일 리셋 및 폰트 설정 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #f8f9fa;
+    color: #333333;
+    line-height: 1.6;
+    padding: 40px 20px;
+}
+
+/* 2. 메인 컨테이너 스타일 */
+main {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    padding: 30px;
+}
+
+/* 3. 아티스트 프로필 섹션 */
+#artist-profile {
+    margin-bottom: 30px;
+    text-align: center; /* 프로필 요소 중앙 정렬 */
+}
+
+#artist-name {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #111111;
+    margin-bottom: 8px;
+}
+
+#artist-debut {
+    font-size: 0.95rem;
+    color: #666666;
+    margin-bottom: 15px;
+}
+
+#debut-text {
+    font-weight: 600;
+    color: #4f46e5; /* 데뷔 날짜에 포인트 컬러(보라색) 적용 */
+}
+
+#artist-bio {
+    font-size: 1.05rem;
+    color: #4a5568;
+    background-color: #f1f5f9;
+    padding: 15px;
+    border-radius: 12px;
+    word-break: keep-all; /* 한글 단어 단위 줄바꿈 */
+}
+
+/* 4. 대표곡 목록 섹션 */
+#artist-tracks {
+    margin-top: 25px;
+}
+
+#artist-tracks h3 {
+    font-size: 1.3rem;
+    color: #111111;
+    margin-bottom: 15px;
+    border-left: 4px solid #4f46e5; /* 제목 왼쪽에 포인트 바 추가 */
+    padding-left: 10px;
+}
+
+#track-list {
+    list-style: none; /* 기본 점 제거 */
+}
+
+/* 나중에 자바스크립트 등으로 <li> 태그가 추가되었을 때 적용될 스타일 */
+#track-list li {
+    font-size: 1rem;
+    padding: 12px 16px;
+    background-color: #fafafa;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+}
+
+/* 곡 목록에 마우스를 올렸을 때 효과 */
+#track-list li:hover {
+    background-color: #f3f4f6;
+    transform: translateY(-2px);
+    border-color: #cfd1d4;
+}
+
+/* 5. 구분선 스타일 */
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #e5e7eb;
+    margin-top: 30px;
+}
